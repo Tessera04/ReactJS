@@ -5,7 +5,10 @@ import Testimonio from './componentes/Testimonio.js'
 function App() {
   return (
     <div className="App">
-      <Testimonio />
+      <div className='contenedor-principal'>
+        <h1>Esto dicen nuestros alumnos sobre MadiasCamp</h1>
+        <Testimonio />
+      </div>
     </div>
   );
 }

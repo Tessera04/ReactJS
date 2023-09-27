@@ -1,6 +1,7 @@
 import react from "react";
+import '../stylesheets/Testimonio.css';
 
-function Testimonio() {
+function Testimonio(props) {
   return(
     <div className="contenedor-testimonio">
       <img 
@@ -8,9 +9,9 @@ function Testimonio() {
         src={require("../img/testimonio-emma.png")}
         alt="foto de Emma"/>
       <div className="contenedor-texto">
-        <p className="nombre-testimonio">Emma Bostian en Suecia</p>
-        <p className="cargo-testimonio">Ingeniera de Software en Spotify</p>
-        <p className="texto-testimonio">sexooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo anal</p>
+        <p className="nombre-testimonio">{props.nombre} en {props.pais}</p>
+        <p className="cargo-testimonio">{props.cargo} en {props.empresa}</p>
+        <p className="texto-testimonio">{props.testimonio}</p>
       </div>
     </div>
   );
